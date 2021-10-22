@@ -1,0 +1,19 @@
+Bootstrap: docker
+From: python:3.9.7-slim-buster
+
+%post
+    apt-get update
+    apt-get install -y libblosc1
+    pip install --upgrade pip
+    pip install zarr
+    pip install blosc
+    pip install jupyterlab
+    pip install scikit-image
+    pip install fsspec
+    pip install s3fs
+    pip install ome-zarr
+    pip install "dask[complete]"
+    pip install dask-image
+
+%runscript
+    exec "$@"
