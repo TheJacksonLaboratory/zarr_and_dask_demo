@@ -3,7 +3,7 @@ From: python:3.9.7-slim-buster
 
 %post
     apt-get update
-    apt-get install -y libblosc1
+    apt-get install -y libblosc1 graphviz
     pip install --upgrade pip
     pip install zarr
     pip install blosc
