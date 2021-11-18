@@ -1,3 +1,4 @@
 *.sif
 .ipynb_checkpoints
+dask-worker-space/
 
