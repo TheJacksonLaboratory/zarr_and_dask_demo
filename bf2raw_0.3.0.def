@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: openjdk:11.0.10-jre-slim-buster
+
+%post
+    apt-get update && apt-get install -y wget unzip
+    apt-get install -y libblosc1
+    cd /usr/local
+    wget https://github.com/glencoesoftware/bioformats2raw/releases/download/v0.3.0/bioformats2raw-0.3.0.zip 
+    unzip bioformats2raw-0.3.0.zip
+    rm bioformats2raw-0.3.0.zip
+
+%runscript
+    exec /usr/local/bioformats2raw-0.3.0/bin/bioformats2raw "$@"
