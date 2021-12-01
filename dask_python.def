@@ -14,7 +14,6 @@ From: python:3.9.7-slim-buster
     pip install ome-zarr
     pip install "dask[complete]"
     pip install dask-image
-    pip install dask-jobqueue
     pip install graphviz
 
 %runscript
