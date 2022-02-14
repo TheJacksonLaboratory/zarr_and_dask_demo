@@ -3,8 +3,8 @@
 #SBATCH --job-name=plate2zarr
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
-#SBATCH --mem=128G
-#SBATCH --time=10:00:00
+#SBATCH --mem=64G
+#SBATCH --time=1:00:00
 
 usage="$(basename "$0") [-h] [-i plate_index -o output -b container] -- \
 Convert a Phenix plate to zarr
