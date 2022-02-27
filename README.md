@@ -20,6 +20,7 @@ Note: I stop short of grabbing all of the resources of a node, because I like to
 _Important!_: If you get an error about the port being in use, increment by 1 and try again.
 
 ```
+module load singularity
 export SINGULARITY_BIND="/projects,/home"
 /projects/researchit/djme/zarr_dask_examples/containers/dask_python.sif jupyter-lab --no-browser --ip=$(hostname -i) --port=8888
 ```
