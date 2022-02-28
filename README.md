@@ -5,6 +5,8 @@
 
 #### Launch an interactive session for the March 3, 2022 workshop
 
+_Note_: You should _only_ use this command for the workshop. See the section on launching of the dev partition below for future reference.
+
 `srun -p RIT_CI_Only -q rit_test -A dask_class -c 32 --mem=320GB --time=08:00:00 --pty bash`
 
 
