@@ -5,7 +5,7 @@
 
 #### Launch an interactive session for the March 3, 2022 workshop
 
-_Note_: You should _only_ use this command for the workshop. See the section on launching of the dev partition below for future reference.
+_Note_: You should _only_ use this command for the workshop. See the section on launching an interactive session on the dev partition below for future reference.
 
 `srun -p RIT_CI_Only -q rit_test -A dask_class -c 32 --mem=320GB --time=08:00:00 --pty bash`
 
@@ -34,3 +34,11 @@ Example data and containers can be found here:
 `/projects/researchit/djme/zarr_dask_examples`
 
 ## Where to find documentation
+
+#### Zarr documentation
+
+1) [zarr.convenience.open](https://zarr.readthedocs.io/en/stable/api/convenience.html#zarr.convenience.open) - For opening zarrs on a conventional file system or S3 bucket, for example.
+2) [zarr.storage](https://zarr.readthedocs.io/en/stable/api/storage.html) - If you want to write zarrs from Pyton (not really covered in this tutorial).
+3) [zarr.core.Array](https://zarr.readthedocs.io/en/stable/api/core.html) - Class methods and attributes that can be used when working with zarrs.
+
+#### Dask documentation
