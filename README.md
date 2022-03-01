@@ -42,3 +42,11 @@ Example data and containers can be found here:
 3) [zarr.core.Array](https://zarr.readthedocs.io/en/stable/api/core.html) - Class methods and attributes that can be used when working with zarrs.
 
 #### Dask documentation
+
+1) [dask.array.from\_zarr](https://docs.dask.org/en/stable/generated/dask.array.from_zarr.html#dask.array.from_zarr) - Create a dask array from a zarr.
+2) [dask.array.Array](https://docs.dask.org/en/stable/generated/dask.array.Array.html#dask.array.Array) - Class methods and attributes that can be used when working with dask arrays.
+3) [dask.array](https://docs.dask.org/en/stable/array-api.html#top-level-functions) - Top-level functions that can be applied to any dask array.
+
+#### Dask-image documentation
+
+1) [dask\_image API](http://image.dask.org/en/latest/api.html) - Image processing functions designed for use with dask arrays.
